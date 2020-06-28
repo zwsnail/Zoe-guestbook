@@ -25,29 +25,29 @@
 
     <style>
     *{  
-            margin: 0px;  
-            padding: 0px;  
-        }  
-        video{  
-            position: fixed;  
-            right: 0px;  
-            bottom: 0px;  
-            min-width: 100%;  
-            min-height: 100%;  
-            height: 100%;  
-            width: 100%;  
-            object-fit: fill;
-            z-index: -100;
-            /*加滤镜*/  
-            /*-webkit-filter: grayscale(100%);*/  
-            /*filter:grayscale(100%);*/  
-        }  
-        source{  
-            min-width: 100%;  
-            min-height: 100%;  
-            height: auto;  
-            width: auto;  
-        }  
+        margin: 0px;  
+        padding: 0px;  
+    }  
+    video{  
+        position: fixed;  
+        right: 0px;  
+        bottom: 0px;  
+        min-width: 100%;  
+        min-height: 100%;  
+        height: 100%;  
+        width: 100%;  
+        object-fit: fill;
+        z-index: -100;
+        /*加滤镜*/  
+        /*-webkit-filter: grayscale(100%);*/  
+        /*filter:grayscale(100%);*/  
+    }  
+    source{  
+        min-width: 100%;  
+        min-height: 100%;  
+        height: auto;  
+        width: auto;  
+    }  
 
     </style>
 

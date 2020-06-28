@@ -9,6 +9,10 @@
       </el-menu-item>
     </el-menu>
 
+    <div id="clickheart" v-on:mousedown.left="createLoves($event)" v-on:mouseup="removeHeart">
+      <clickheart ref="background"></clickheart>
+    </div>
+
     <el-main class="content">
       <router-view></router-view>
     </el-main>
@@ -16,13 +20,22 @@
 </template>
 
    <script>
-// import BookVideo from "@/public/assets/video/book.mp4";
+import clickheart from "./ClickHeart.vue";
 export default {
+  components: { clickheart },
+
   data() {
     return {};
   },
   mounted() {},
-  methods: {}
+  methods: {
+    createLoves() {
+      this.$refs.background.createLoves(event);
+    },
+    removeHeart() {
+      this.$refs.background.removeHeart();
+    }
+  }
 };
 </script>
 
@@ -38,5 +51,13 @@ export default {
   width: auto;
   height: auto;
   z-index: -99;
+}
+
+#clickheart {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 </style>
