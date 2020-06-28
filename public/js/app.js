@@ -50141,8 +50141,10 @@ window.Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.
  */
 // const files = require.context('./', true, /\.vue$/i);
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default));
+// Vue.component('example-component', require('./components/ExampleComponent.vue').default);
+// Vue.component('example', require('./components/Example.vue'));
 
-Vue.component('signatures', __webpack_require__(/*! ./components/Signatures.vue */ "./resources/js/components/Signatures.vue"));
+Vue.component('signatures', __webpack_require__(/*! ./components/Signatures.vue */ "./resources/js/components/Signatures.vue")["default"]);
 Vue.component('signature-form', __webpack_require__(/*! ./components/SignatureForm.vue */ "./resources/js/components/SignatureForm.vue"));
 Vue.component('paginate', __webpack_require__(/*! vuejs-paginate */ "./node_modules/vuejs-paginate/dist/index.js"));
 /**
